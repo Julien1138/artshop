@@ -1,5 +1,6 @@
 const store = [
   {
+    id: 1,
     title: 'Peinture sur toile décorative',
     description:
       "Tableau décoratif fait main à la peinture à l'huile en respectant les couches et les temps de séchage qui incombent à cette technique.\
@@ -12,6 +13,7 @@ const store = [
     rating: 4,
   },
   {
+    id: 2,
     title: 'Diptyque bleu et gris - Motifs Tissus',
     description:
       'Deux petits tableaux décoratifs.\
@@ -23,6 +25,7 @@ const store = [
     rating: 3,
   },
   {
+    id: 4,
     title: 'Petit tableau décoratif noir et blanc motifs et tissus',
     description:
       "Petit tableau peint à l'huile et à la main.\
@@ -33,6 +36,7 @@ const store = [
     rating: 2,
   },
   {
+    id: 3,
     title: 'Tableau panoramique motifs et tissu rose et gris',
     description:
       'Tableau décoratif fait main.\
@@ -43,6 +47,7 @@ const store = [
     rating: 5,
   },
   {
+    id: 5,
     title: 'Petit tableau déco motifs verts- feuilles et graphique',
     description:
       'Petit tableau peint par mes soins. Idéal sur une petite étagère ou un petit meuble :)',

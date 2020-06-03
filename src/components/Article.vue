@@ -1,11 +1,15 @@
 <template>
   <div class="article">
     <div class="article-left">
-      <img class="article-image" :src="`/pictures/${article.image_src}`" />
+      <router-link :to="routeToArticle">
+        <img class="article-image" :src="`/pictures/${article.image_src}`" />
+      </router-link>
     </div>
     <div class="article-right">
       <div class="article-header">
-        <h2>{{ article.title }}</h2>
+        <router-link :to="routeToArticle">
+          <h2>{{ article.title }}</h2>
+        </router-link>
       </div>
       <div class="article-content">
         <p>{{ article.description }}</p>
@@ -46,6 +50,15 @@ export default {
         style: 'currency',
         currency: 'EUR',
       })
+    },
+
+    routeToArticle() {
+      return {
+        name: 'Details',
+        params: {
+          id: this.article.id,
+        },
+      }
     },
   },
 }
